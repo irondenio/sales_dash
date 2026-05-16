@@ -17,6 +17,6 @@ jobs:
       - name: Run tests
         run: pytest -q
       - name: Deploy to Streamlit Cloud
-        uses: streamlit/streamlit-action@v1
+        uses: streamlit/deployment-action@v1.0.0
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
